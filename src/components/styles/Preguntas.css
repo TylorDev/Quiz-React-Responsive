@@ -1,0 +1,222 @@
+
+/*Dividiria estos estilos en varios archivos
+pero ya no quiero jaja, no hace falta XD Ademas es demasiado simple, imagina que los hize. 
+Hize los nombre los mas claros posibles jaja
+*/
+
+
+
+
+
+:root {
+  ---color1: #f5f7fb;
+  --color4: #dcdfed;
+  --color6: #D6DBF5;
+  --color7: #94d7a2;
+  --color8: #f7bbbb;
+  --color5: #aeb7e7;
+  --color9: #6879d1;
+  --color3: #4d5b9e;
+  --color2: #293264;
+  /* Otras variables de color */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla-Bold", Helvetica;
+}
+
+
+/*MAIN */
+.main {
+  background-color: var(--color1);
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/*MAIN: PREGUNTA*/
+
+/**/ .pregunta-container {
+  padding-bottom: 2%;
+  width: 40%;
+  border: solid #00000040; /* Borde negro en la parte inferior */
+  border-width: 0 0 1px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+z-index: 100;
+
+}
+/**/.pregunta {
+  color: var(--color2);;
+  font-size: 21px;
+  font-weight: 700;
+  text-align:start;
+}
+
+/*PREGUNTA: Opciones*/
+/**/ .opciones {
+  display:  flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+/**/ .opcion {
+  color: var(--color2);;
+  line-height: normal;;
+}
+
+
+/**/ /**/ .btn-opcion {
+  border: 1px solid;
+  border-color: var(--color3);;
+  border-radius: 7.94px;
+  height: 100%;
+  background-color: white;
+  white-space: wrap;
+  min-width: 52px;
+  min-height: 30px;
+  color:  green;
+  max-width: 175px;
+
+}
+
+/**/ .opcion-text {
+  color: var(--color3);;
+
+  font-size: 15px;
+  width: 100%;
+
+  
+}
+
+
+/**/ /**/ .btn-opcion:hover:not(.incorrecta):not(.correcta) {
+
+
+  border: 1px solid;
+  border-color: var(--color4);;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 900px) {
+ 
+ /**/ .pregunta-container {
+
+   align-items: center;
+   justify-content: center;
+ }
+  /**/.pregunta {
+   color: var(--color2);;
+   font-size: 16px;
+   font-weight: 700;
+   text-align:center;
+
+ }
+ 
+ 
+ /**/ .opciones {
+ 
+
+   flex-direction: column;
+   justify-content: center;
+ }
+ 
+ 
+ /**/ /**/ .btn-opcion {
+   border: 1px solid;
+   border-color: var(--color3);;
+   border-radius: 7.94px;
+   height: 100%;
+   background-color: white;
+   white-space: wrap;
+   max-width: 200px;
+   width: 300px;
+   color:  green;
+ }
+ 
+ 
+ }
+
+
+/*RESPUESTAS*/
+ .seleccionado {
+
+  background-color: var(--color5);;
+  
+  border-color: var(--color6);;
+  
+  transition: background-color 0.5s ; 
+
+
+}
+
+/**/ /**/ .correcta{
+  background-color: var(--color7);
+  border: 1px solid var(--color7);
+  transition: background-color 0.5s ; 
+}
+
+/**/ /**/ .incorrecta{
+  background-color: var(--color8);
+  border: 1px solid var(--color8);
+  transition: background-color 0.5s ; 
+}
+
+/*REINTENTAR*/
+.btn-fin{
+  
+  font-size: 13px;
+  min-height: 50px;
+  min-width: 150px;
+  margin-top: 20px;
+}
+.btn-fin:hover{
+
+  background-color:var(--color9) ;
+  cursor: pointer;
+}
+
+.jugarDenuevo{
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content:center;
+  width : 40%;
+  margin-top: 2%;
+
+  padding-bottom: 100px;
+  flex-wrap: wrap;
+  z-index: 100;
+  
+}
+
+.btn-jugar{
+  margin-top: 20px;
+  font-size: 13px;
+  min-height: 50px;
+  min-width: 150px;
+}
+
+.calificacion{
+  font-weight: bold;
+  color: var(--color3);;
+  align-self: center;
+  text-align: center;
+
+margin-top: 20px;
+margin-right: 20px;
+}
+
+
+
+

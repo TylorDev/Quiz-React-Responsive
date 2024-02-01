@@ -1,0 +1,101 @@
+
+/*Dividiria estos estilos en varios archivos
+pero ya no quiero jaja, no hace falta XD Ademas es demasiado simple, imagina que los hize. 
+Hize los nombre los mas claros posibles jaja
+*/
+body {
+  /* Asegúrate de que el cuerpo ocupe toda la altura de la ventana */
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+  .inicio{
+    background-color: var(--color1);
+    width: fit-content;
+    height: fit-content;
+    font-family: "Karla-Bold", Helvetica;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:  relative;
+    z-index: 999;
+
+   
+  }
+
+/*Boton inicio */
+
+.btn-normal{
+  background-color: #4d5b9e;
+  border-radius: 15px;
+  height: fit-content;
+  width: fit-content;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+} 
+.btn-normal:hover{
+
+  background-color:#6879d1;
+}
+
+.BotonInicio {
+  font-size: 18px;
+  min-height: 60px;
+  min-width: 200px;
+  margin: 30px;
+
+} 
+ 
+
+
+  
+.logo{
+    margin: 20px;
+  }
+  
+.descripcion {
+    color: #293264;
+ 
+
+  }
+    
+.blob{
+
+  height: 250px;
+
+}
+
+  
+.amarilla{
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.azul{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+
+
+  }
+
+
+.Blob-container{
+  background-color: red;
+  height: auto;
+
+}
+
