@@ -1,11 +1,10 @@
 // Inicio.js
-import React from "react";
 import "../styles/Preguntas.css";
 import { useState, useEffect } from "react";
-import { Blobs } from "../Modulos/Blobs.js";
+import { Blobs } from "../Modulos/Blobs.jsx";
 import { data, obtenerPreguntasAleatorias, revisarPuntaje } from "../data.js";
-import { ListaPreguntas } from "../Modulos/ListaPreguntas.js";
-import { ContainerResultados } from "../Modulos/ContainerResultados.js";
+import { ListaPreguntas } from "../Modulos/ListaPreguntas.jsx";
+import { ContainerResultados } from "../Modulos/ContainerResultados.jsx";
 
 export const Preguntas = () => {
   //PUNTAJE TOTAL DEL USUARIO
@@ -26,27 +25,32 @@ export const Preguntas = () => {
     );
   };
 
-
   const showPuntaje = () => {
     // Mostrar puntajes individuales
     for (const key in respuestasFinales) {
       console.log(`${key}: ${respuestasFinales[key]}`);
     }
     // Calcular y mostrar la suma total
-    const sumaTotal = Object.values(respuestasFinales).reduce((acc, valor) => acc + valor, 0);
+    const sumaTotal = Object.values(respuestasFinales).reduce(
+      (acc, valor) => acc + valor,
+      0
+    );
     console.log("Puntaje total:", sumaTotal);
-  
+
     // Actualizar el estado y mostrar el puntaje
     setScore(sumaTotal);
     setShow(true);
   };
-  
+
   const PreguntasParaMostrar = 5;
 
   useEffect(() => {
     // Obtener una copia aleatoria de 5 preguntas del objeto data.js
-    
-    const preguntasAleatorias = obtenerPreguntasAleatorias(data, PreguntasParaMostrar);
+
+    const preguntasAleatorias = obtenerPreguntasAleatorias(
+      data,
+      PreguntasParaMostrar
+    );
     setPreguntasAleatorias(preguntasAleatorias);
   }, []);
 
@@ -62,7 +66,3 @@ export const Preguntas = () => {
 };
 
 export default Preguntas;
-
-
-
-

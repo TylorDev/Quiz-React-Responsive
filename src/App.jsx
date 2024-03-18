@@ -1,7 +1,6 @@
-import React from "react";
-import Inicio from "./components/Views/InicioMain.js";
-import Preguntas from "./components/Views/PreguntasMain.js";
-import { Routes, Route, Link } from "react-router-dom";
+import Inicio from "./components/Views/InicioMain.jsx";
+import Preguntas from "./components/Views/PreguntasMain.jsx";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
