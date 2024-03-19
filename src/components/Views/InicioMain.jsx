@@ -9,7 +9,11 @@ const Inicio = () => {
     <div>
       <div className="inicio">
         <div className="logo">
-          <img className="quizzical" alt="Quizzical" src="Quizzical.svg" />
+          <img
+            className="quizzical"
+            alt="Quizzical"
+            src="Quiz-React-Responsive/Quizzical.svg"
+          />
         </div>
         <div className="descripcion">Alguna descripción si fuera necesario</div>
 
